@@ -12,3 +12,9 @@ function calculateTip(percent) {
     document.getElementById("tipAmount").textContent = `Tip: $${tip.toFixed(2)}`;
     document.getElementById("totalAmount").textContent = `Total: $${total.toFixed(2)}`;
 }
+
+function resetCalculator() {
+    document.getElementById("bill").value = "";
+    document.getElementById("tipAmount").textContent = "Tip: $0.00";
+    document.getElementById("totalAmount").textContent = "Total: $0.00";
+}
